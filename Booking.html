@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href=style.css>
+    <div class="card">
+        <img src="images/homestay.png"class="img"/>
+    <nav class="nav">
+        <a class="anchor"href="Home.html">Home</a>
+        <a class="anchor"href="Rooms.html">Rooms</a>
+         <a class="anchor"href="Facilities.html">Facilities</a>
+         <a class="anchor"href="About.html">About</a>
+         <a class="anchor"href="Contact.html">Contact</a>
+        <a class="anchor"href="Booking.html">Booking</a>
+    </nav>
+    </div>
+</head>
+<body>
+        <p id="total">Total:$0.00</p>
+        <script>
+       
+    let total=0;
+    function addcart(price){
+        total=total+price;
+        document.getElementById("total").innerText=total.toFixed(2);
+
+    }
+ </script>  
+    
+    </body>

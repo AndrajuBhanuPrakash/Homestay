@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href=style.css>
+    <div class="card">
+        <img src="images/homestay.png"class="img"/>
+    <nav class="nav">
+           <button class="button5"><a class="anchor"href="Home.html">Home</a></button>
+        <button class="button5"><a class="anchor"href="Rooms.html">Rooms</a></button>
+         <button class="button5"><a class="anchor"href="Facilities.html">Facilities</a></button>
+         <button class="button5"><a class="anchor"href="About.html">About</a></button>
+         <button class="button5"><a class="anchor"href="Contact.html">Contact</a></button>
+         <button class="button5"><a class="anchor"href="Comments.html">Comments</a></button>
+    </nav>
+    </div>
+</head>
+<body>
+  <div class="card2" >
+    <h1 class="h2">Rooms</h1>
+    <div style="display:flex">
+        <div>
+            <img src="images/bed3.png"class="images"></br>
+           <div class="card4">
+            <h1>Ac </h1>
+            <p> Rs 1200</p>
+            <button onclick="addcart( 1200)">Room1</button>
+        </div>
+         </div>
+       <div>
+        <img src="images/bed.jpg"class="images">
+        <div  class="card4">
+        <h1>Ac</h1>
+        <p> Rs 1200</p>
+      <button onclick="addcart(1200)">Room2</button>   
+    </div>
+      </div>
+      <div>
+        <img src="images/bed.png"class="images">
+          <div  class="card4" >
+        <h1>Non Ac</h1>
+        <p> Rs 900</p>
+      <button onclick="addcart(900)">Room3</button>   
+    </div>
+      </div>
+    </div>
+    </div>
+<footer class="footer1">
+<div style="display:flex">
+    <div style="margin-left:120px">
+        <h1 class="h1" style="font-size:20px">Sri Karthikeya Homestay</h1>
+        <p class="p"> we strive to provide not just a place to stay, but a peaceful and memorable experience rooted in warmth, care, and local charm.</p>
+    </div>
+    <div> 
+        <h1 style="margin-left:120px;color:rgb(238, 66, 23) ">contact</h1>
+        <h2  style="margin-left:140px;color:black">Tirumalsetti Samudra venu surya prakasa Rao</h2>
+        <b style="margin-left:140px;color:rgb(14, 4, 4)">+91 9985446866</b>
+        
+    </div>
+</div>
+</footer>
+ <script>
+    let total=0;
+    function addcart(price){
+        total=total+price;
+        document.getElementById("total").innerText=total.toFixed(2);
+
+    }
+ </script>
+    </body>
